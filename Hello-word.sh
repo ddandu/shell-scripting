@@ -4,5 +4,5 @@
 
 Name1=Devendra
 Name2=Reshma
-echo "Hi Reshma :: how are you"
-echo "I'm good Hi Devendra how are you"
+echo "Hi $Name1 :: how are you"
+echo "I'm good Hi $Name2 how are you"
