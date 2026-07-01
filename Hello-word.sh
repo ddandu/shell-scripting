@@ -1,10 +1,6 @@
 #!/bin/bash
 
-# This first program to leran shell scripting 
-
-Name1=$1
-Name2=$2
-
-echo "Hi $Name1 :: how are you"
-echo "I'm good Hi $Name2 how are you"
-echo "I'm good how ae you $Name1 "
+echo "Ramesh:: Hi Suresh, How are you?"
+echo "Suresh:: Hello Ramesh, I am fine. How are you?"
+echo "Ramesh:: What are you learning recently?"
+echo "Suresh:: I am learning Shell scripting Ramesh"
