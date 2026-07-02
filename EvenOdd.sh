@@ -1,6 +1,6 @@
 #!/bin/bash
 
-ech "Please enter the number"
+echo "Please enter the number"
 
 read NUMBER
 
@@ -10,6 +10,6 @@ echo "The given number is $NUMBER is even"
 
 else 
 
-echo "The givne number is $NUMBEr is odd"
+echo "The givne number is $NUMBER is odd"
 
 fi
