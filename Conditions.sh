@@ -8,7 +8,7 @@ if [ $NUMBER -lt 10 ] ; then
 elif
    [ $NUMBER -eq 10 ] ; then
 
-    echo "The given number is $NUMBER is eqult 
+    echo "The given number is $NUMBER is eqult" 
 else
    echo "The given number is $NUMBER greather then 10"
 
