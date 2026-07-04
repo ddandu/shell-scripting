@@ -1,6 +1,6 @@
 #!/bin/bash
 
-each "Please enter the Number"
+echo "Please enter the Number"
 
 read NUMBER
 
