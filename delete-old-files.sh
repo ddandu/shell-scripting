@@ -13,7 +13,7 @@ LOG_FILE="$LOGS_FOLDER/$SCRIPT_NAME.log" # /var/log/shell-script/16-logs.log
 mkdir -p $LOGS_FOLDER
 echo "Script started executed at: $(date)" | tee -a $LOG_FILE
 
-SOURCE_DIR=/root/dev/app-loghhh
+SOURCE_DIR=/root/dev/app-log
 
 if [ ! -d $SOURCE_DIR ]; then
     echo -e "ERROR:: $SOURCE_DIR does not exist"
