@@ -7,11 +7,17 @@ MESSAGE=""
 
 while IFS= read -r line
 do
-    USAGE=$(echo $line | awk '{print $6}' | cut -d "%" -f1)
-    PARTITION=$(echo $line | awk '{print $7}')
+    USAGE=$(echo $line | awk '{print $6}' | cut -d "%" -f1)  #df -hT | grep -v Filesystem | awk '{print $6}' | cut -d "%" -f1 - 0 0 2
+    PARTITION=$(echo $line | awk '{print $7}')  # df -hT | awk '{print $7}' Mounted /dev /dev/shm
     if [ $USAGE -ge $DISK_THRESHOLD ]; then
         MESSAGE+="High Disk usage on $PARTITION: $USAGE % <br>" # escaping
     fi
 done <<< $DISK_USAGE
 
 echo -e "Message Body: $MESSAGE"
+
+# Output
+# sh disk-usage.sh
+# Message Body: High Disk usage on /run: 2 
+
+
